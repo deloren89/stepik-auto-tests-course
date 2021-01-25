@@ -14,7 +14,7 @@ browser = webdriver.Firefox()
 browser.get(link) 
 
 
-# Дождаться, когда цена дома уменьшится до 10000 RUR 
+# Дождаться, когда цена дома уменьшится до 100 USD 
 prise = WebDriverWait(browser, 12).until(
         EC.text_to_be_present_in_element((By.ID, "price"), "100")
     )
